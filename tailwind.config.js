@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.js", "./index.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Space Grotesk", "sans-serif"],
+      },
+    },
   },
   plugins: [require("@tailwindcss/aspect-ratio")],
 };
