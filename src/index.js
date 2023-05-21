@@ -11,7 +11,6 @@ btn.addEventListener("click", () => {
 const serchProduct = async () => {
   try {
     const query = await fetchData();
-    console.log(query);
     appendProductMarcup(query);
   } catch (error) {
     console.log(error);
